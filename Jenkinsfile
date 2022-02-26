@@ -20,6 +20,12 @@ pipeline {
 
     stage('Paso2') {
       steps {
+        build 'TomcatPruebasProduccion'
+      }
+    }
+
+    stage('Paso3') {
+      steps {
         build 'JOB3.1'
       }
     }
